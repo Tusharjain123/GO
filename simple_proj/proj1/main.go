@@ -11,10 +11,10 @@ import (
 )
 
 type Jokedata struct {
-	Category string `json: "category"`
-	Joke     string `json: "joke"`
-	Id       int    `json: "id"`
-	Lang     string `json: "lang"`
+	Category string `json:"category"`
+	Joke     string `json:"joke"`
+	Id       int    `json:"id"`
+	Lang     string `json:"lang"`
 }
 
 func goDotEnvVariable(key string) string {
